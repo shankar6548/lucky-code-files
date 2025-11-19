@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>It"s Luckys District App</title>
+  <!-- TOP SECTION -->
+ <style> 
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5a3fdf;
+}
+
+.city {
+  font-weight: bold;
+}
+
+.state {
+  font-size: 12px;
+  padding:8px;
+  color: #888;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+  align-items: center;
+  justify-self: space-between;
+  font-size: 100%;
+
+}
+
+.nav-menu li {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 90%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin: 0 8px;
+}
+.lucky-search {
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+  gap: 20px;           
+}
+
+
+</style>
+
+<!-- movie section -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+    }
+
+    .movie-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .movie-card {
+      background-color: white;
+      border-radius: 10px;
+      width: 160px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .movie-title {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .movie-info {
+      font-size: 13px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+/* WONDERLA PARK SECTION */
+h2 {
+  margin-bottom: 15px;
+}
+
+.card-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: max-content;
+  height: 440px;
+  /* object-fit: cover; */
+  top: 39%;
+  left: 40%;
+  margin: 1%;
+  padding: 0%;
+}
+
+.details {
+  padding: 10px;
+}
+
+.details h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.details p {
+  margin: 4px 0;
+  color: #555;
+}
+</style>
+ 
+
+<!-- 3D SECTION -->
+<style>
+
+  
+h4 {
+  margin-bottom: 15px;
+}
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+    }
+
+    .movie-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .movie-card {
+      background-color: white;
+      border-radius: 10px;
+      width: 160px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .movie-title {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .movie-info {
+      font-size: 13px;
+      /* color: gray; */
+      margin-bottom: 10px;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+</style>
+<style>
+ 
+  </style>
+<style>
+.artists {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.artists h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.artist-list {
+  display: inline-flex;
+   justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap; 
+
+}
+
+.artist {
+  flex: 1 1 160px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 300%;
+  display: block;
+}
+
+.artist p {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #222;
+}
+</style>
+
+
+<style>
+/* 
+footer section */
+
+.footer-container {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: white;
+  height: max-content;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+   
+}
+
+.footer-logo h1 {
+font-style:italic ;
+  font-family: monospace;
+  font-size: 32px;
+  margin: 0;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-qr {
+  text-align: center;
+}
+
+.footer-qr img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0.5px solid #333;
+}
+
+.footer-disclaimer {
+  font-size: 14px;
+  color: #999;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer-disclaimer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- logo section -->
+
+     <nav class="navbar">
+    <div class="left-section">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShZH3_XWuNd-rqRtdYas_-uw2_lIAfc3rM1ZOdjVO2zF4RB2iUlxF2bZRNpBReRQf1-7Q&usqp=CAU" width="134",height="320" alt="" class="logo" />
+        <div>
+           
+  
+        </i><i class="fa-solid fa-location-dot"> </i>
+        
+          <div class="city">
+             <img src="data:image/png;base64,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 height" height="23",width="20" alt="">Rajamundry
+          </div>
+          <div class="state">    Andhrapradesh</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <ul class="nav-menu">
+      <li class="active">For you</li>
+      <li>Dining</li>
+      <li>Events</li>
+      <li>Movies</li>
+      <li>Activities</li>
+    </ul> -->
+     <ul class="nav-menu">
+    <h1>for you <span class="badge badge-secondary"></span></h1>
+<h2>Events <span class="badge badge-secondary"></span></h2>
+<h3>Dining <span class="badge badge-secondary"></span></h3>
+<h4>Activities <span class="badge badge-secondary"></span></h4>
+<h5>Movies<span class="badge badge-secondary"></span></h5>
+ </ul> 
+ <!-- <button type="button" class="btn btn-primary">
+  Notifications <span class="badge badge-light">4</span>
+</button> -->
+
+<div class="lucky-search">
+     <div class="search-wrapper">
+    
+      <img src="data:image/jpeg;base64,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" height="22", width="20"><alt=""> 
+    <div class="icon search-icon"></div>
+    <input type="text" class="search-input" placeholder="Search for events, movies, restaurants restaurants" />
+    <div class="icon avatar-icon"></div>
+   
+      
+    </div>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3AFgLDWvdT4waHGHcievwEUvSiD_o57-fw&s" height="22",width="20" alt="">
+  </div>
+  </div>
+  </nav>
+
+<!-- movieds  section  -->
+
+  <h2>Hits from Previous & Future Weeks</h2>
+
+  <div class="movie-container">
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Poster_0001_Raja%20sahab-4b1b7e60-405b-11f0-b426-a50671acfc24.jpg?format=webp&imwidth=256" alt="">
+      <div class="movie-title">THE Rajasahab</div>
+      <div class="movie-info">UA18+ | Telugu,English,urdu,Hindi and more</div>
+    </div>
+
+   <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/OG-d3066a10-8d14-11ef-b907-a19bf42cde25.jpg?format=webp&imwidth=256" alt="">
+      <div class="movie-title">They Call Him OG</div>
+      <div class="movie-info">UA15+ | Telugu </div>
+    </div>
+
+   <div class="movie-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQki8InW7h_kAsVLIMrJOXLAM5WHD70TEkB3Q&s" alt="">
+      <div class="movie-title">Salaar: Part2-Shouryaanga Parvam</div>
+      <div class="movie-info">UA21+ | 100+(lang) </div>
+    </div>
+
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Sitaare-Zameen-par-6c32be10-4b5a-11f0-bdae-31cf0cb4d840.jpg" alt="">
+      <div class="movie-title">Sitaare Zameen Par</div>
+      <div class="movie-info">UA16+ | Hindi</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/poster_0006_Maa1-06f61230-5187-11f0-a578-5d827ee44c2f.jpg?format=webp&imwidth=256" alt="">
+      <div class="movie-title">Maa</div>
+      <div class="movie-info">UA11+ | Hindi</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Hari-Hara-Veera-Mallu--Part-1-%E2%80%93-Sword-Vs-Spirit%20(1)-b92cdee0-3565-11f0-b426-a50671acfc24.jpg" alt="">
+      <div class="movie-title">Hari hara veraamallu part 1</div>
+      <div class="movie-info">UA19+ | Telugu and 1 more</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/kannappa-b87741a0-518c-11f0-a578-5d827ee44c2f.jpeg" alt="">
+      <div class="movie-title">Kannappa</div>
+      <div class="movie-info">UA13+ | Hindi and 1 more</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://i.ytimg.com/vi/DiZGEUdtx9w/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AGMAoAC4AOKAgwIABABGH8gRSgmMA8=&rs=AOn4CLCjUX-4MHHfV8_TeAuNuUdc95v9XQ" alt="">
+      <div class="movie-title">Debba Debba</div>
+      <div class="movie-info">UA21+ | Telugu,200+lang.. </div>
+    </div>
+
+  </div>
+    
+<!-- second section  wonderla-->
+
+  <h2>Best Amusements</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1748845533/fptggx4ocmvkncxfttwg.jpg" height="200",width="200" alt="Worlds of Wonder" />
+      <div class="details">
+        <h3>Worlds of Wonder (WOW) - Water Park</h3>
+        <p>Worlds of Wonder, Noida</p>
+        <p>₹149 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1744115883/nkbqyhim3jgllfzu71ar.jpg" alt="" />
+      <div class="details">
+        <h3>Atlantic Water World</h3>
+        <p>Delhi/NCR</p>
+        <p>₹449 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1747724388/elfpb37kpkb4goxrzb0m.jpg" alt="" />
+      <div class="details">
+        <h3>Drizzling Land Water & Amusement Park</h3>
+        <p>Ghaziabad</p>
+        <p>₹450 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1744900856/cgdaylzgkzz6vaqbppk1.png" alt="" />
+      <div class="details">
+        <h3>Splash water world 1 Rohtak</h3>
+        <p>Rohtak</p>
+        <p>₹600 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1746255356/hqkfkbebwk643tpgka6w.jpg" alt="" />
+      <div class="details">
+        <h3>Jurassic Park inn | delhi NCR</h3>
+        <p>DElhi</p>
+        <p>₹750 onwards</p>
+      </div>
+    </div>
+   <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1747204062/bc6pisvrfryftunr5oq6.jpg" alt="Mojoland" />
+      <div class="details">
+        <h3>Snow masti | Greater Noida</h3>
+        <p>THe grand venic mall greater noida</p>
+        <p>₹950 onwards</p>
+      </div>
+    </div>
+  </div>
+
+<!-- third section -->
+
+<h2>EXPERIENCE IN 3D</h2>
+
+  <div class="movie-container">
+    
+      
+   <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/HTYD6-1c8e5750-45d0-11f0-b426-a50671acfc24.jpg" alt="">
+      <div class="movie-title"> How to train the Dargon</div>
+      <div class="movie-info">UA18+ | Eng</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/elio5-aae9e670-4b5e-11f0-bdae-31cf0cb4d840.jpg" alt="">
+      <div class="movie-title">Eilo</div>
+      <div class="movie-info">UA16+ | Hindi</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/POSTER%20_0009_Lilo%20Stitch2-793d4d80-36d5-11f0-b426-a50671acfc24.jpg" alt="">
+      <div class="movie-title">Lilo & Stitch</div>
+      <div class="movie-info">UA11+ | English</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Minecraft-37874660-0fa8-11f0-ac8c-93d19273dc5b.jpg" alt="">
+      <div class="movie-title">A Minecraft Movie</div>
+      <div class="movie-info">UA19+ | English and 1 more</div>
+    </div>
+     </div>
+
+
+
+     <h2>INDIA'S TOP EVENTS</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1750837728/gatpw9ewgjndkcdexadh.jpg" height="200",width="200" alt="Worlds of Wonder" />
+      <div class="details">
+        <p>5 jul,5:30PM</p>
+        <h3>Room XO presentd Mika singh</h3>
+        <p>Gurugram</p>
+        <p>₹1499 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1751367995/xw5enumtfh3zlpynuty1.jpg" alt="" />
+      <div class="details">
+        <p>6 jul,3;30</p>
+        <h3>Indore Comedy Festival</h3>
+        <p>Phoenix Mall, Indore</p>
+        <p>₹1399 onwards</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1750237427/tzjcdx85a06ressutqbj.jpg" alt="" />
+      <div class="details">
+        <p>20 Aug-30 AUG, 7:30</p>
+        <h3>All About Music 2025</h3>
+        <p>Grand Hyutt, Mumbai</p>
+      
+        <p>₹3000 onwards</p>
+      </div>
+    </div>
+  </div>
+<div>
+ <h2>ARTISTS IN YOUR DISTRICT</h2>
+  <!-- cricle section -->
+</div>
+  <div class="artist-list">
+    <div class="artist">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1740549427/i2myltfwt8wwpr00g8oo.jpg" alt="">
+      <p>Louis CK</p>
+    </div>
+    <div class="artist">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1747749240/apkam20ng5cnk1hpwvgy.jpg" alt="">
+      <p>Radhika Das</p>
+    </div>
+    <div class="artist">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1744206127/cr4qhqw6obiktnsctbkz.jpg" alt="">
+      <p>Taaruk Raina</p>
+    </div>
+    <div class="artist">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1742198687/a30tv3mqqz0xojxwoxmj.jpg" alt="">
+      <p>Papon</p>
+    </div>
+  </div>
+
+
+
+    <!-- timeless section -->
+     <h2>TIMELESS HITS</h2>
+
+  <div class="movie-container">
+    
+      
+   <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Umrao-Jaan%20(1)-0f1ad0e0-4b83-11f0-bdae-31cf0cb4d840.jpg" alt="">
+      <div class="movie-title">Umrao Jaan(1981)</div>
+      <div class="movie-info">U | Hindi</div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://assetscdn1.paytm.com/images/cinema/Love-Aaj-Kal-(2009)2-49147fd0-19c4-11f0-b2bf-d9c854ed10fa.jpg" alt="">
+      <div class="movie-title">Love Aaj Kal(2007)</div>
+      <div class="movie-info">UA | Hindi</div>
+    </div>
+  </div>
+
+
+ 
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>district</h1>
+        <p>BY ZOMATO</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact Us</a>
+        <a href="#">List your events</a>
+      </div>
+
+      <div class="footer-qr">
+        <img src="data:image/svg+xml,%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='1126'%20height='1126'%3e%3cdefs/%3e%3cg%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='0'%20y='0'%20width='1126'%20height='1126'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23FFFFFF'%20stroke='none'%20x='70'%20y='70'%20width='986'%20height='0'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='70'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='104'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='138'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='172'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='206'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='240'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='274'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='308'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='342'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='376'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='410'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='308'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='444'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='308'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='478'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='512'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='308'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='546'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='580'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='614'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='308'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='648'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='784'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='682'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='784'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='716'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='784'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='750'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='70'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='274'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='784'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='818'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='852'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='784'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='886'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='784'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='920'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='342'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='478'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='546'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='716'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='818'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='852'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='988'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='954'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='104'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='138'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='172'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='206'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='240'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='376'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='410'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='444'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='512'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='580'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='614'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='648'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='682'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='750'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='886'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='920'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='954'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='1022'%20y='988'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='70'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='104'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='138'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='172'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='206'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='240'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='274'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='308'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='342'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='376'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='410'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='444'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='478'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='512'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='546'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='580'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='614'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='648'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='682'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='716'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='750'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='784'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23000'%20stroke='none'%20x='818'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='852'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='886'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='920'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='954'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='988'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='%23ffffff'%20stroke='none'%20x='1022'%20y='1022'%20width='34'%20height='34'%20shape-rendering='crispEdges'/%3e%3crect%20fill='rgb(0,0,0)'%20stroke='none'%20x='0'%20y='0'%20width='1126'%20height='70'%20shape-rendering='crispEdges'%20fill-opacity='0'/%3e%3crect%20fill='rgb(0,0,0)'%20stroke='none'%20x='0'%20y='70'%20width='70'%20height='986'%20shape-rendering='crispEdges'%20fill-opacity='0'/%3e%3crect%20fill='rgb(0,0,0)'%20stroke='none'%20x='1056'%20y='70'%20width='70'%20height='986'%20shape-rendering='crispEdges'%20fill-opacity='0'/%3e%3crect%20fill='rgb(0,0,0)'%20stroke='none'%20x='0'%20y='1056'%20width='1126'%20height='70'%20shape-rendering='crispEdges'%20fill-opacity='0'/%3e%3c/g%3e%3c/svg%3e" alt="QR Code" />
+        <p>Scan to download the app</p>
+      </div>
+  
+
+    <hr />
+
+
+  
+
+    
+
+    <p class="footer-disclaimer">
+      By accessing this page, you confirm that you have read, understood, and agreed to our 
+      <a href="#">Terms of Service</a>, <a href="#">Cookie Policy</a>, 
+      <a href="#">Privacy Policy</a>, and <a href="#">Content Guidelines</a>. All rights reserved.
+    </p>
+
+    <div class="footer-social">
+      <img src="https://www.vhv.rs/dpng/d/407-4072133_whatsapp-logo-png-transparent-black-whatsapp-icon-png.png" alt="WhatsApp" />
+      <img src="https://www.citypng.com/public/uploads/preview/outline-round-facebook-fb-icon-logo-701751695134773jn1popsjn6.png" alt="Facebook" />
+      <img src="https://w7.pngwing.com/pngs/796/55/png-transparent-instagram-logo-computer-icons-insta-logo-rectangle-sticker-circle.png" alt="Instagram" />
+      <img src="https://i.pinimg.com/736x/2f/b9/09/2fb909b74a854f0715e64dda5825990d.jpg" alt="X (Twitter)" />
+      <img src="https://w7.pngwing.com/pngs/457/1007/png-transparent-youtube-computer-icons-youtube-angle-rectangle-black.png" alt="YouTube" />
+
+    </div>
+  </div>
+  </footer>
+
+
+  
+</body>
+</html>
+
+
+</body>
+</html>

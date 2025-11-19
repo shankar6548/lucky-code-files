@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea placeholder="Type a text" id="character-Text-area"
+    onkeyup="countCheck()"></textarea>
+    <p>Number of character left: <span id="displayCount">20</span>
+
+    </p>
+    <script>
+        function countCheck(){
+            var character= document.getElementById("character-Text-area").
+             value;
+             var displayCount=document.getElementById("displayCount")
+             console.log(character)
+             if(character.lenght>20){
+                displayCount.innerHTML=20-charcter.lenght;
+                displayCount.style.color="black"
+              
+             }
+             else{
+        displayCount.innerHTML="Limit exceeded"
+                displayCount.style.color="red"
+             }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>goodmorning everyone</p>
+    <p></p>
+    <ul>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+    <li>Guvva</li>
+    <li>Pineapple</li>
+    </ul>
+    <p id="company" class="name">codegnan it solutions</p>
+    <script>
+        // var fruitList=document.getElementsByTagName("li")
+        // console.log(fruitList)
+        // console.log(fruitList{2}.innerHTML)
+        var companyName=document.querySelector(".name").innerHTML
+        console.log(companyName)
+    </script>

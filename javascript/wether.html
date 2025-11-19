@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" placeholder="Enter city name" id="cityName" />
+        <button>Submit</button>
+    </form>
+    <div id="cityContainer"></div>
+    <script>
+        let apikey = "8dec1af8174365905ba1dbabf012a78a"
+        let cityName = document.getElementById("cityName")
+        let cityContainer = document.getElementById("cityContainer")
+        let form = document.getElementById("form")
+        window.addEventListener("DOMContentLoaded", () => {
+            // localStorage.removeItem("weatherData")
+            const savedData = JSON.parse(localStorage.
+                getItem("weatherData")) || []
+            savedData.forEach(display)
+        })
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let city = cityName.value
+            console.log(city)
+            let url = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
+            fetch(url)
+                .then((res) => {
+                    console.log(res)
+                    return res.json()
+                })
+                .then((jsonRes) => {
+                    //console.log(jsonRes)
+
+                    if (jsonRes.cod === "404")
+                        alert("City not found")
+                    const { sys, main, name } = jsonRes
+                    const weatherObj = {
+                        name, temp: main.temp, country:
+                            sys.country
+                    }
+                    //console.log(weatherObj)
+                    let data = JSON.parse(localStorage.
+                        getItem("weatherData")) || []
+                    data.push(weatherObj)
+                    localStorage.setItem("weatherData",
+                        JSON.stringify(data))
+                    display(weatherObj)
+                })
+        })
+        function display(data) {
+            console.log(data)
+            let div = document.createElement("div")
+            div.classList.add("weather-card")
+            div.innerHTML =
+                `
+                   <h2>${data.name}</h2>
+                   <p>Temperature:${data.temp}</p>
+                   <p>Country:${data.country}</p>
+         `
+            cityContainer.append(div)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Array = [2,3,4,5,6],dummy=[]
+        // array.forEach(function(i), thisValue){
+        // console.log(i)
+    //     // })
+    //    dummy= array.map(function(i){
+    //         console.log(i)
+    //         return i+10
+    //     })
+    //     console.log(dummy)
+//     let studentEmployees = [
+//   {
+//     studentname:"ysivasankar"
+//     studentId: "1001",
+//     employeeId: "E101",
+//     cityName: "tirupati"]
+
+    let employee=[
+        {name:"siva",id:"34",salary:45000},
+         {name:"lucky",id:"94",salary:95000}, 
+         {name:"janu",id:"394",salary:405000},
+    ]
+    const result=employee.find((i)=> i.name==="janu")
+    console.log(result)
+    // const totalsalary=employee.reduce(function(acc,i){
+    //     return acc+i.salary
+    // },0)
+    // console.log(totalsalary)
+    // let averagesalary=employee.filter(function(i){
+    //     return i.salary>=50000
+    // })
+    // console.log(averagesalary)
+//    let bonusMonth = employee.map(function(i){
+//     // return i.salary+10000
+//     return{
+//         ...i,
+//         salary:i.salary+10000
+//     }
+       
+//     })
+//      console.log(bonusMonth)
+
+        </script>
+</body>
+</html>

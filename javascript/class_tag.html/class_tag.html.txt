@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <input type="text" id="name" name="fristname" placeholder=""/>
+    </div>
+    <div>
+    <input type="text" id="email" name="useremail" placeholder=""/>
+    </div>
+    <button onclick="greet()">click me</button>
+    <script>
+        function greet(){
+            // alert("good morning")
+            var name=document.getElementById("name").value
+            var email=document.getElementById("email").value
+           console.log(name)
+        }
+    </script>
+</body>
+</html>

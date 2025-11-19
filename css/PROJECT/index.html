@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f6f6f6;
+            line-height: 1.5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo img {
+            width: 120px;
+        }
+
+        .navbar-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-items select {
+            padding: 6px 12px;
+            font-weight: 500;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .download,
+        .signin {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signin {
+            background-color: #002970;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+        }
+
+        .signin i {
+            background-color: #00baf2;
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 1100px;
+        }
+
+        .pay-anyone {
+            width: 50%;
+        }
+
+        .pay-anyone img {
+            width: 120px;
+        }
+
+        .pay-anyone h1 {
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+            color: #002970;
+        }
+
+        .pay-anyone p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .get-apps img {
+            width: 130px;
+            margin-right: 10px;
+        }
+
+        .payment-image {
+            width: 45%;
+        }
+
+        .payment-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .recharges {
+            background-color: white;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 1100px;
+        }
+
+        .recharges h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #002970;
+        }
+
+        .recharges-links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .recharges-links a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            width: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .recharges-links a:hover {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .recharges-links img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .mobile-recharge {
+            background-color: #1fbef5;
+            padding: 20px;
+            margin: 40px auto;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            max-width: 1100px;
+        }
+
+        .mobile-recharge a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .mobile-recharge .fa-mobile-screen {
+            font-size: 2rem;
+            background-color: white;
+            color: #1fbef5;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .mobile-recharge span {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .recharge-btn {
+            border: 2px solid white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            background-color: #fff;
+            color: #1fbef5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="logo"><img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg"
+                alt="Logo"></a>
+
+        <div class="navbar-items">
+            <select>
+                <option>Ticket Booking</option>
+            </select>
+            <select>
+                <option>Recharge & Bills</option>
+            </select>
+            <select>
+                <option>Payments & Services</option>
+            </select>
+            <select>
+                <option>Paytm for Business</option>
+            </select>
+            <select>
+                <option>Company</option>
+            </select>
+        </div>
+
+        <a class="download"><i class="fa-solid fa-download"></i> Download App</a>
+        <a class="signin"><i class="fa-solid fa-user"></i> Sign In</a>
+    </nav>
+
+    <div class="container">
+        <div class="pay-anyone">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/342367/1725447383123.png" alt="">
+            <h1>Pay anyone directly from your bank account.</h1>
+            <p>Make contactless & secure payments in-stores or online using Paytm UPI. Send & receive money from anyone
+                directly from your Bank Account.</p>
+            <div class="get-apps">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png"
+                    alt="AppStore">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png"
+                    alt="PlayStore">
+            </div>
+        </div>
+        <div class="payment-image">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/1725447382730.png" alt="Payment Illustration">
+        </div>
+    </div>
+
+    <div class="recharges">
+        <h3>Recharges</h3>
+        <div class="recharges-links">
+            <a href="#">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988617/17632098712964840.png   "
+                    alt="">
+                <span>Mobile Recharge</span>
+            </a>
+            <a href="#">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988616/21592552986104912.png" alt="">
+                <span>FASTag Recharge</span>
+            </a>
+            <a href="#">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3075896/17632033973318580.png" alt="">
+                <span>DTH Recharge</span>
+            </a>
+            <a href="#">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988618/24720807275657318.png" alt="">
+                <span>View All</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="mobile-recharge">
+        <a href="#">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Do Mobile Recharge & Win ₹100 Cashback<br>PROMO: TAKEITTALL</span>
+            <p class="recharge-btn">Recharge Now <i class="fa-solid fa-mobile-screen"></i></p>
+        </a>
+    </div>
+
+    <h3> Bill Payments</h3>
+    <div class="recharges-links">
+        <a href="#">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988613/17632121487569201.png" alt="">
+            <span>Mobile Recharge</span>
+        </a>
+        <a href="#">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988614/24720887330032979.png" alt="">
+            <span>FASTag Recharge</span>
+        </a>
+        <a href="#">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988612/24720938495236796.png" alt="">
+            <span>DTH Recharge</span>
+        </a>
+        <a href="#">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988615/17632210213164311.png" alt="">
+            <span>View All</span>
+        </a>
+    </div>
+
+</body>
+
+</html>

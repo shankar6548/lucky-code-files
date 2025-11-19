@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h2>Todo List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    <script>
+        window.onload=function(){
+            loadTasks()
+        }
+
+    function loadTasks(){
+        const taskList=document.getElementById("taskList");
+        taskList.innerHTML=""
+        const tasks=getTasksFromStorage()
+        console.log("loadTasks", tasks)
+        tasks.forEach((task, index) => {
+            const li=document.createElement("li")
+            li.innerHTML=
+            `
+            ${task}
+            <button onclick="deleteTask(${index})">Delete</button>
+            `
+            taskList.appendChild(li)
+        })
+    }
+
+        function getTasksFromStorage(){
+            const tasks=localStorage.getItem("tasks")
+           return tasks ? JSON.parse(tasks) : []
+        }
+        function addTask(){
+            let input=document.getElementById("taskInput")
+            const newTask=input.value
+            if(newTask==""){
+                alert("Please enter a task")
+                return
+            }
+            const tasks=getTasksFromStorage()
+            tasks.push(newTask)
+            localStorage.setItem("tasks", JSON.stringify(tasks))
+            input.value=""
+            loadTasks()
+        }
+        function deleteTask(index){
+            const tasks=getTasksFromStorage()
+            tasks.splice(index, 1)
+            localStorage.setItem("tasks", JSON.stringify(tasks))
+            loadTasks()
+        }
+    </script>
+</body>
+</html>

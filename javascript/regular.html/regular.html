@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validate()" action="https:/www.google.com">
+        <p>
+            <input type="text"
+            placeholder="enter name"
+            id="name"/>
+        </p>
+        <p>
+            <input type="text"
+            placeholder="enter email"
+            id="email"/>
+        </p>
+          <p>
+            <input type="text"
+            placeholder="password"
+            id="password"/>
+        </p>
+                  
+        <select name="enter a city" id="city">
+            <option value="">select your city</option>
+            <option value="pune">pune</option>
+            <option value="tirupati">tirupati</option>
+            <option value="puttur">puttur</option>
+        </select>
+        <button>submit</button>
+    </form>
+    <script>
+        function validate()[]
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+             let password=document.getElementById("password").value
+              let city=document.getElementById("city").value
+            let nameCheck=/^[a-zA-Z]+[a-zA-Z]+$/
+            let emailcheck=/^[a-zA-Z0-9]+@[a-z]+\.[a-z](2,3)$/
+            let passwordcheck=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*$/
+            if(name==""||name.lenght<3){
+                alert("check your name once")
+                return false
+            }
+            if(!name.match(nameCheck)){
+                alert("name must carry alphabets only")
+                return false
+            }
+            if(!email.match(emailcheck)){
+                console.lo(email)
+                alert("email is not correct")
+                return false
+            }
+            if(!password.match(passwordcheck)){
+                alert("password must carry upper, lowercase, number and 6 characters are needed")
+                return false
+            }
+                if(city==""){
+                alert("select your city")
+                return false
+                }
+            return true
+        }
+    </script>
+</body>
+</html>

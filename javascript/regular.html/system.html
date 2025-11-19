@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>District by Zomato Replica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .scrolling-wrapper {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 1rem;
+    }
+    .scrolling-wrapper .card {
+      display: inline-block;
+      width: 200px;
+      margin-right: 1rem;
+    }
+    .card img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .nav-link.active-category {
+      background-color: #e6e6fa;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">district</a>
+      <span class="navbar-text ms-2">
+        <i class="bi bi-geo-alt-fill"></i> Gurugram, Haryana
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-2">
+          <li class="nav-item"><a class="nav-link active-category" href="#">For you</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dining</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
+        </ul>
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search for events, movies and restaurants">
+          <button class="btn btn-outline-secondary rounded-pill" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <button class="btn btn-light ms-3 rounded-circle"><i class="bi bi-person"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h5 class="mb-3">Hits from previous weeks</h5>
+    <div class="scrolling-wrapper">
+      <!-- Sample cards -->
+      <div class="card">
+        <img src="saiyaara.jpg" class="card-img-top" alt="Saiyaara">
+        <div class="card-body">
+          <h6 class="card-title">Saiyaara</h6>
+          <p class="card-text text-muted">UA16+ | Hindi</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="maalik.jpg" class="card-img-top" alt="Maalik">
+        <div class="card-body">
+          <h6 class="card-title">Maalik</h6>
+          <p class="card-text text-muted">A | Hindi</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="f1movie.jpg" class="card-img-top" alt="F1 The Movie">
+        <div class="card-body">
+          <h6 class="card-title">F1 The Movie</h6>
+          <p class="card-text text-muted">UA16+ | English and 1 more</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="jurassic.jpg" class="card-img-top" alt="Jurassic World Rebirth">
+        <div class="card-body">
+          <h6 class="card-title">Jurassic World Rebirth</h6>
+          <p class="card-text text-muted">UA13+ | English and 1 more</p>
+        </div>
+      </div>
+      <!-- Add more cards similarly -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
